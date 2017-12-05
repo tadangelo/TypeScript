@@ -3,3 +3,10 @@ function hey_there() {
 }
 
 hey_there();
+
+
+function hello_there() {
+  console.log("Hello World");
+}
+
+hello_there();

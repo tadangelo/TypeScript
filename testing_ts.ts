@@ -1,6 +1,6 @@
 class HelloAngularComponent {
   greeting: string;
   constructor() {
-    this.greeting = 'Hello Typescript'
+    this.greeting = 'Hello Typescript';
   }
 }
