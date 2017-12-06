@@ -7,24 +7,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var AccountsPayable = /** @class */ (function () {
-    function AccountsPayable() {
-    }
-    AccountsPayable.prototype.deleteAccount = function () {
+let AccountsPayable = class AccountsPayable {
+    constructor() { }
+    deleteAccount() {
         console.log('Deleting account...');
-    };
-    __decorate([
-        admin,
-        __metadata("design:type", Function),
-        __metadata("design:paramtypes", []),
-        __metadata("design:returntype", void 0)
-    ], AccountsPayable.prototype, "deleteAccount", null);
-    AccountsPayable = __decorate([
-        detailedLog('billing'),
-        __metadata("design:paramtypes", [])
-    ], AccountsPayable);
-    return AccountsPayable;
-}());
+    }
+};
+__decorate([
+    admin,
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], AccountsPayable.prototype, "deleteAccount", null);
+AccountsPayable = __decorate([
+    detailedLog('billing'),
+    __metadata("design:paramtypes", [])
+], AccountsPayable);
 function detailedLog(dashboard) {
     if (dashboard == 'billing') {
         console.log('Working in the billing department');
