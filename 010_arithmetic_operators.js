@@ -20,6 +20,14 @@ console.log("Modulus:");
 var numThree = 2;
 var numFour = 21;
 console.log(numFour % numThree);
+console.log("Modulus:");
+var numThree = 2;
+var numFour = 20;
+console.log(numFour % numThree);
+console.log("Modulus:");
+var numThree = 5;
+var numFour = 1237;
+console.log(numFour % numThree);
 // incrementor
 console.log("Incrementor:");
 var x = 0;

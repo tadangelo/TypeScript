@@ -32,6 +32,16 @@ var numThree : number = 2;
 var numFour : number = 21;
 console.log(numFour % numThree);
 
+console.log("Modulus:");
+var numThree : number = 2;
+var numFour : number = 20;
+console.log(numFour % numThree);
+
+console.log("Modulus:");
+var numThree : number = 5;
+var numFour : number = 1237;
+console.log(numFour % numThree);
+
 // incrementor
 
 console.log("Incrementor:");
