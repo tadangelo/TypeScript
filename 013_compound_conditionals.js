@@ -1,4 +1,5 @@
 // AND &&
+var password = 'asdfasdf';
 var email = 'test@test.com';
 if (password == 'asdfasdf') {
     console.log('Password id correct');

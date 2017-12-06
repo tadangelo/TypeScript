@@ -1,5 +1,5 @@
 // AND &&
-
+var password : string = 'asdfasdf';
 var email : string = 'test@test.com';
 
 if (password == 'asdfasdf') {

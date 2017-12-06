@@ -1,14 +1,23 @@
-function printAddress(street, streetTwo, state) {
+function printAddress(street, streetTwo, city, state, zip) {
+    if (city === void 0) { city = 'Pheonix'; }
     if (state === void 0) { state = 'AZ'; }
     console.log(street);
     if (streetTwo) {
         console.log(streetTwo);
     }
+    // if (city) {
+    //   console.log(city);
+    // }
+    console.log(city);
     console.log(state);
+    if (zip) {
+        console.log(zip);
+    }
 }
 printAddress('123 Any St');
 printAddress('123 Any St', 'Suite 540');
-printAddress('123 Any St', 'Suite 540', 'UT');
+printAddress('123 Any St', 'Suite 540', 'Lehi', 'UT');
+printAddress('123 Any St', 'Suite 540', 'Lehi', 'UT', 77077);
 function lineupCard(team) {
     var players = [];
     for (var _i = 1; _i < arguments.length; _i++) {

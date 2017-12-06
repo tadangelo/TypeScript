@@ -1,13 +1,10 @@
-// a function is a programming mechanism that allows you to encapsulate data behavior and then call it any time and have the function run whatever processes are inside of it
-
-
-function fullName(first, last) {
+var fullName = (first, last) => {
   return first + " " + last;
 }
 
 console.log(fullName('Tania', 'DAngelo'));
 
-function gradeGenerator(grade: number) : string {
+var gradeGenerator = (grade: number) : string => {
   if (grade < 60) {
     return 'F';
   } else if (grade >= 60 && grade < 70) {
