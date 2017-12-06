@@ -2,27 +2,27 @@
 // Start mowing -> Pending
 // Complete mowing process -> Resolve
 // Did not complete mowing process -> Reject
-var performUpload = function (imgStatus) {
-    return new Promise(function (resolve) {
-        console.log("Status: " + imgStatus);
-        setTimeout(function () {
+let performUpload = function (imgStatus) {
+    return new Promise((resolve) => {
+        console.log(`Status: ${imgStatus}`);
+        setTimeout(() => {
             resolve({ imgStatus: imgStatus });
-        }, 1000);
+        }, 2000);
     });
 };
 var upload;
 var compress;
 var transfer;
 performUpload('uploading...')
-    .then(function (res) {
+    .then((res) => {
     upload = res;
     return performUpload('compressing...');
 })
-    .then(function (res) {
+    .then((res) => {
     compress = res;
     return performUpload('transferring...');
 })
-    .then(function (res) {
+    .then((res) => {
     transfer = res;
     return performUpload('Image upload completed.');
 });

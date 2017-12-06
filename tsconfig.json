@@ -8,6 +8,6 @@
     "sourceMap": true
   },
   "files": [
-    "032_method_decorator.ts"  
+    "029_promises.ts"  
   ]
 }
